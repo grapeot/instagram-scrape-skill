@@ -24,6 +24,9 @@ dependencies = []
 capture = ["playwright>=1.40"]
 dev = ["pytest>=7"]
 
+[project.scripts]
+ig-scrape = "ig_scrape.cli:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
