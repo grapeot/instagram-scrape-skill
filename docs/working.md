@@ -9,6 +9,8 @@
 - Verified optional browser-context media download over CDP (`fetch(mediaUrl)` to base64 blob), producing a valid 1440x1085 JFIF JPEG (181 KB).
 - Scaffolded the `instagram-scrape-skill` v0 repository with the `ig-scrape` CLI (`archive`, `parse`, `export`), MIT license, and GitHub Actions offline pytest CI workflow.
 - Drafted and reviewed the repository documentation and `skills/instagram-scrape/SKILL.md` agent skill via a drafting agent.
+- Published the repository (public GitHub, `master` with required-PR branch protection, zero required reviews, admin-enforced); landed the CLI implementation and offline suite via PR #1 (17 tests green), and a follow-up PR #2 wiring the `ig-scrape` console script.
+- Published `README.zh-CN.md`: drafted from the settled English README via the drafting agent, then processed with the voice-rewrite model; five surgical fact fixes applied (invented first-person attribution in the course-lesson paragraph, tool-vs-"we" attribution in the capture paragraph, prose paragraph restored from a stray list bullet, lowercase `chrome`/`2fa`/`graphql` casing). Style unchanged per the voice-rewrite contract.
 
 ## Lessons Learned
 
