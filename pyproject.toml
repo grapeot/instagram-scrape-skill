@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instagram-scrape-skill"
+version = "0.1.0"
+description = "Browser-native Instagram media archiving via CDP-attached Chrome: capture GraphQL payloads the Instagram web app fetches itself, and archive a structured media index."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "grapeot" }]
+keywords = ["instagram", "scraping", "playwright", "cdp", "agent", "skill"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet",
+]
+dependencies = []
+
+[project.optional-dependencies]
+capture = ["playwright>=1.40"]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
